@@ -28,14 +28,13 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
-nav ul li {
-    margin-right: 20px;
+.nav-tabs {
+    justify-content: center;
 }
 
-nav ul li a {
+.nav-tabs .nav-link {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -45,7 +44,7 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-tabs .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -53,7 +52,7 @@ main {
     padding: 20px;
 }
 
-footer {
+.footer {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -61,42 +60,43 @@ footer {
 }
 
 .section-block {
-    background-color: #fff;
-    margin-bottom: 30px;
-    border-radius: 8px;
+    margin: 20px;
     padding: 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.section-block h1 {
-    color: #333;
-    font-size: 32px;
+h1,
+h2,
+h3 {
+    color: #0173c7;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.section-block p {
-    color: #666;
-    font-size: 18px;
-    line-height: 1.6;
+.nav-tabs .nav-link {
+    transition: background-color 0.3s ease;
 }
 
-.people-table {
-    overflow-x: auto;
+.nav-tabs .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+hr {
+    border-top: 2px solid #ddd;
 }
 
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
+.text-muted {
+    color: #777;
 }
 
-th {
-    background-color: #f2f2f2;
-    color: #333;
-    font-weight: 700;
-    text-align: left;
+@media (max-width: 767px) {
+    .logo img {
+        height: 30px;
+    }
 }
