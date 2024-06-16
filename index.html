@@ -116,6 +116,44 @@
             .undergrad-batch div {
                 flex: 1 1 100%;
             }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+                border-bottom: 1px solid #002244;
+                width: 100%;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero {
+                padding: 50px 20px;
+            }
+            header {
+                padding: 15px;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.5em;
+            }
+            .hero {
+                padding: 30px 10px;
+            }
+            nav a {
+                padding: 8px;
+            }
+            header {
+                padding: 10px;
+            }
+            .container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -132,8 +170,10 @@
         <a href="#contact">Contact</a>
     </nav>
     <div class="hero">
-        <h1>Innovating in Photonics and Quantum Technologies</h1>
-        <p>Advancing the frontiers of technology through research and collaboration</p>
+        <div class="container">
+            <h1>Innovating in Photonics and Quantum Technologies</h1>
+            <p>Advancing the frontiers of technology through research and collaboration</p>
+        </div>
     </div>
     <div class="container" id="about">
         <h2 class="section-title">About</h2>
