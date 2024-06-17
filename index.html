@@ -15,7 +15,7 @@
             scroll-behavior: smooth;
         }
         header {
-            background-color: #004c8c;
+            background-color: #003366;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -26,7 +26,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #003366;
+            background-color: #002244;
             position: sticky;
             top: 60px;
             z-index: 999;
@@ -39,7 +39,7 @@
             font-weight: bold;
         }
         nav a:hover {
-            background-color: #002244;
+            background-color: #001122;
         }
         .container {
             max-width: 1200px;
@@ -54,13 +54,20 @@
             color: #fff;
             text-align: center;
             padding: 100px 20px;
+            position: relative;
         }
         .hero h1 {
             font-size: 3em;
             margin: 0;
         }
+        .hero p {
+            background-color: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+        }
         footer {
-            background-color: #004c8c;
+            background-color: #003366;
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -93,6 +100,17 @@
             border-radius: 50%;
             margin-bottom: 20px;
         }
+        .researcher h3 {
+            margin-bottom: 5px;
+        }
+        .researcher a {
+            margin: 5px;
+            color: #004c8c;
+            text-decoration: none;
+        }
+        .researcher a:hover {
+            text-decoration: underline;
+        }
         .undergrad-batch {
             display: flex;
             justify-content: space-between;
@@ -121,7 +139,7 @@
             }
             nav a {
                 padding: 10px;
-                border-bottom: 1px solid #002244;
+                border-bottom: 1px solid #001122;
                 width: 100%;
                 text-align: center;
             }
@@ -193,6 +211,9 @@
                 <img src="path_to_pi_image.jpg" alt="PI Name">
                 <h3>PI Name</h3>
                 <p>Short bio or description of the PI.</p>
+                <a href="https://www.linkedin.com/in/pi-linkedin" target="_blank">LinkedIn</a> |
+                <a href="https://scholar.google.com/citations?user=pi-google-scholar" target="_blank">Google Scholar</a> |
+                <a href="https://www.university.edu/pi-webpage" target="_blank">University Webpage</a>
             </div>
         </div>
         
@@ -202,11 +223,17 @@
                 <img src="path_to_graduate_image1.jpg" alt="Graduate Researcher 1">
                 <h3>Graduate Researcher 1</h3>
                 <p>Short bio or description of the researcher.</p>
+                <a href="https://www.linkedin.com/in/grad1-linkedin" target="_blank">LinkedIn</a> |
+                <a href="https://scholar.google.com/citations?user=grad1-google-scholar" target="_blank">Google Scholar</a> |
+                <a href="https://www.university.edu/grad1-webpage" target="_blank">University Webpage</a>
             </div>
             <div class="researcher">
                 <img src="path_to_graduate_image2.jpg" alt="Graduate Researcher 2">
                 <h3>Graduate Researcher 2</h3>
                 <p>Short bio or description of the researcher.</p>
+                <a href="https://www.linkedin.com/in/grad2-linkedin" target="_blank">LinkedIn</a> |
+                <a href="https://scholar.google.com/citations?user=grad2-google-scholar" target="_blank">Google Scholar</a> |
+                <a href="https://www.university.edu/grad2-webpage" target="_blank">University Webpage</a>
             </div>
             <!-- Add more graduate researchers as needed -->
         </div>
