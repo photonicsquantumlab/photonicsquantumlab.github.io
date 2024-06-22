@@ -3,305 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photonics and Quantum Tech Research Group</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-            scroll-behavior: smooth;
-        }
-        header {
-            background-color: #004c8c;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 3px solid #002244;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #003366;
-            position: sticky;
-            top: 60px;
-            z-index: 999;
-        }
-        nav a {
-            color: #fff;
-            padding: 15px 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        nav a:hover {
-            background-color: #002244;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3, h4 {
-            color: #004c8c;
-        }
-        .hero {
-            background: url('path_to_background_image.jpg') no-repeat center center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 100px 20px;
-            position: relative;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .hero p {
-            background-color: rgba(0, 0, 0, 0.5);
-            display: inline-block;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #003366;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .footer-links {
-            margin: 10px 0;
-        }
-        .footer-links a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .section-title {
-            border-bottom: 2px solid #004c8c;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-        }
-        .researcher-section {
-            margin-top: 40px;
-        }
-        .researcher {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 40px;
-        }
-        .researcher img {
-            max-width: 200px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .researcher h3 {
-            margin-bottom: 5px;
-        }
-        .researcher-links {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .researcher-links a {
-            color: #004c8c;
-            text-decoration: none;
-        }
-        .researcher-links a:hover {
-            text-decoration: underline;
-        }
-        .undergrad-batch {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .undergrad-batch div {
-            flex: 1 1 calc(33% - 10px);
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .undergrad-batch div img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .undergrad-batch h4 {
-            margin-top: 10px;
-            color: #004c8c;
-        }
-        @media (max-width: 768px) {
-            .undergrad-batch div {
-                flex: 1 1 100%;
-            }
-            nav {
-                flex-direction: column;
-            }
-            nav a {
-                padding: 10px;
-                border-bottom: 1px solid #002244;
-                width: 100%;
-                text-align: center;
-            }
-            .hero h1 {
-                font-size: 2em;
-            }
-            .hero {
-                padding: 50px 20px;
-            }
-            header {
-                padding: 15px;
-            }
-            .container {
-                padding: 15px;
-            }
-        }
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.5em;
-            }
-            .hero {
-                padding: 30px 10px;
-            }
-            nav a {
-                padding: 8px;
-            }
-            header {
-                padding: 10px;
-            }
-            .container {
-                padding: 10px;
-            }
-        }
-    </style>
+    <title>PQT Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Photonics and Quantum Tech Research Group</h1>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#group">Group</a>
-        <a href="#publications">Publications</a>
-        <a href="#collaborations">Collaborations</a>
-        <a href="#join-us">Join Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="hero">
         <div class="container">
-            <h1>Innovating in Photonics and Quantum Technologies</h1>
-            <p>Advancing the frontiers of technology through research and collaboration</p>
+            <h1>PQT Lab</h1>
+            <p>Pioneering Photonics and Quantum Research</p>
         </div>
-    </div>
-    <div class="container" id="about">
-        <h2 class="section-title">About</h2>
-        <p>Welcome to the Photonics and Quantum Tech Research Group. Our mission is to advance the field of photonics and quantum technologies through innovative research and collaboration.</p>
-    </div>
-    <div class="container" id="research">
-        <h2 class="section-title">Research</h2>
-        <p>Our research focuses on cutting-edge developments in photonics and quantum technologies. We aim to push the boundaries of knowledge and technology.</p>
-    </div>
-    <div class="container" id="group">
-        <h2 class="section-title">Group</h2>
-        
-        <div class="researcher-section">
-            <h3>Principal Investigator</h3>
-            <div class="researcher">
-                <img src="path_to_pi_image.jpg" alt="PI Name">
-                <h3>PI Name</h3>
-                <p>Short bio or description of the PI.</p>
-                <div class="researcher-links">
-                    <a href="https://www.linkedin.com/in/pi-linkedin" target="_blank">LinkedIn</a>
-                    <a href="https://scholar.google.com/citations?user=pi-google-scholar" target="_blank">Google Scholar</a>
-                    <a href="https://www.university.edu/pi-webpage" target="_blank">University Webpage</a>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#join-us">Join Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>Welcome to PQT Lab, where we focus on cutting-edge research in photonics and quantum technology.</p>
+            </div>
+        </section>
+
+        <section id="research">
+            <div class="container">
+                <h2>Research</h2>
+                <p>Our research encompasses various topics in photonics and quantum technology.</p>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="container">
+                <h2>Team</h2>
+                <div class="team-member">
+                    <h3>Principal Investigator (PI)</h3>
+                    <img src="placeholder.jpg" alt="PI Image">
+                    <p>Name: [PI Name]</p>
+                    <p>Research Interests: [Research Interests]</p>
+                </div>
+                <div class="team-member">
+                    <h3>Graduate Members</h3>
+                    <img src="placeholder.jpg" alt="Graduate Member Image">
+                    <p>Name: [Graduate Member Name]</p>
+                    <p>Research Interests: [Research Interests]</p>
+                </div>
+                <div class="team-member">
+                    <h3>Undergraduate Members</h3>
+                    <img src="group-placeholder.jpg" alt="UG Members Group Image">
+                    <p>Group Picture</p>
+                </div>
+                <div class="team-member">
+                    <h3>Alumni</h3>
+                    <p>Information about alumni coming soon.</p>
                 </div>
             </div>
-        </div>
-        
-        <div class="researcher-section">
-            <h3>Graduate Researchers</h3>
-            <div class="researcher">
-                <img src="path_to_graduate_image1.jpg" alt="Graduate Researcher 1">
-                <h3>Graduate Researcher 1</h3>
-                <p>Short bio or description of the researcher.</p>
-                <div class="researcher-links">
-                    <a href="https://www.linkedin.com/in/grad1-linkedin" target="_blank">LinkedIn</a>
-                    <a href="https://scholar.google.com/citations?user=grad1-google-scholar" target="_blank">Google Scholar</a>
-                    <a href="https://www.university.edu/grad1-webpage" target="_blank">University Webpage</a>
-                </div>
+        </section>
+
+        <section id="publications">
+            <div class="container">
+                <h2>Publications</h2>
+                <p>Explore our latest publications in the field of photonics and quantum technology.</p>
             </div>
-            <div class="researcher">
-                <img src="path_to_graduate_image2.jpg" alt="Graduate Researcher 2">
-                <h3>Graduate Researcher 2</h3>
-                <p>Short bio or description of the researcher.</p>
-                <div class="researcher-links">
-                    <a href="https://www.linkedin.com/in/grad2-linkedin" target="_blank">LinkedIn</a>
-                    <a href="https://scholar.google.com/citations?user=grad2-google-scholar" target="_blank">Google Scholar</a>
-                    <a href="https://www.university.edu/grad2-webpage" target="_blank">University Webpage</a>
-                </div>
+        </section>
+
+        <section id="teaching">
+            <div class="container">
+                <h2>Teaching</h2>
+                <p>Learn about our teaching initiatives and courses offered by PQT Lab.</p>
             </div>
-            <!-- Add more graduate researchers as needed -->
-        </div>
-        
-        <div class="researcher-section">
-            <h3>Undergraduate Researchers</h3>
-            <div class="undergrad-batch">
-                <div>
-                    <h4>Batch Year 1</h4>
-                    <img src="path_to_undergrad_batch1.jpg" alt="Undergrad Batch Year 1">
-                </div>
-                <div>
-                    <h4>Batch Year 2</h4>
-                    <img src="path_to_undergrad_batch2.jpg" alt="Undergrad Batch Year 2">
-                </div>
-                <div>
-                    <h4>Batch Year 3</h4>
-                    <img src="path_to_undergrad_batch3.jpg" alt="Undergrad Batch Year 3">
-                </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Get in touch with us for any inquiries or collaborations.</p>
             </div>
-        </div>
-    </div>
-    <div class="container" id="publications">
-        <h2 class="section-title">Publications</h2>
-        <p>Explore our latest research publications and findings in the field of photonics and quantum technologies.</p>
-    </div>
-    <div class="container" id="collaborations">
-        <h2 class="section-title">Collaborations</h2>
-        <p>We collaborate with numerous esteemed institutions, organizations, and industry partners to advance the field of photonics and quantum technologies. Here are some of our key collaborators:</p>
-        <ul>
-            <li>Institution A</li>
-            <li>Organization B</li>
-            <li>Industry Partner C</li>
-            <!-- Add more collaborators as needed -->
-        </ul>
-    </div>
-    <div class="container" id="join-us">
-        <h2 class="section-title">Join Us</h2>
-        <p>We are always looking for talented and passionate individuals to join our research group. Find out how you can become a part of our team.</p>
-    </div>
-    <div class="container" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <p>Get in touch with us for more information about our research, publications, and opportunities to collaborate.</p>
-    </div>
+        </section>
+
+        <section id="join-us">
+            <div class="container">
+                <h2>Join Us</h2>
+                <p>Interested in joining PQT Lab? Find out more about our open positions and application process.</p>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="footer-links">
-            <a href="#about">About</a> |
-            <a href="#research">Research</a> |
-            <a href="#group">Group</a> |
-            <a href="#publications">Publications</a> |
-            <a href="#collaborations">Collaborations</a> |
-            <a href="#join-us">Join Us</a> |
-            <a href="#contact">Contact</a>
+        <div class="container">
+            <p>&copy; 2024 PQT Lab. All rights reserved.</p>
         </div>
-        <p>&copy; 2024 Photonics and Quantum Tech Research Group. All rights reserved.</p>
     </footer>
 </body>
 </html>
