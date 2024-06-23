@@ -1,48 +1,73 @@
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
+    background: #f4f4f4;
 }
 
 header {
-    background: #222;
+    background: #333;
     color: #fff;
     padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
 }
 
 .section {
-    padding: 2em 0;
+    padding: 4em 0;
+    background: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section:nth-child(even) {
+    background: #f9f9f9;
 }
 
 .section h2 {
     margin: 0 0 1em;
-    font-size: 1.6em;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -50,52 +75,114 @@ nav ul li a {
 .team-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
 .team-member {
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(25% - 20px);
     text-align: center;
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
 }
 
 .team-member img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
+    margin-bottom: 1em;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 form label {
     margin: 0.5em 0 0.2em;
+    font-weight: bold;
 }
 
 form input, form textarea {
-    padding: 0.5em;
+    padding: 0.7em;
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1em;
 }
 
 form button {
     padding: 0.7em;
-    background: #222;
+    background: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
 form button:hover {
     background: #555;
 }
 
+.publications-list {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 2em;
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.publications-list li:hover {
+    transform: translateY(-10px);
+}
+
+.publications-list h3 {
+    margin: 0 0 0.5em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.publications-list p {
+    margin: 0.2em 0;
+}
+
+.publications-list a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.publications-list a:hover {
+    color: #004099;
+    text-decoration: underline;
+}
+
 footer {
-    background: #222;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    margin-top: 2em;
 }
