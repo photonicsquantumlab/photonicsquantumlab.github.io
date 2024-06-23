@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photonics and Quantum Tech Research Group - PES University</title>
+    <title>Photonics & Quantum Tech | PES University</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: "IBM Plex Sans", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             color: #333;
         }
         .container {
@@ -17,7 +18,7 @@
             margin: 0 auto;
         }
         header {
-            background-color: #1a1a1a;
+            background-color: #007acc;
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
@@ -34,6 +35,14 @@
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
+        }
+        .hero-section {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 200px 0;
+            color: #ffffff;
+            text-align: center;
         }
         .section {
             padding: 50px 0;
@@ -66,11 +75,6 @@
             margin-bottom: 10px;
             font-size: 16px;
         }
-        .publications-list li a {
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: bold;
-        }
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -79,8 +83,15 @@
         .team-member {
             text-align: center;
         }
+        .contact-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
         footer {
-            background-color: #1a1a1a;
+            background-color: #333333;
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
@@ -103,12 +114,12 @@
         </div>
     </header>
 
-    <section id="home" class="section">
+    <div class="hero-section">
         <div class="container">
             <h2>Welcome to our Research Group</h2>
             <p>We are a leading research group at PES University focusing on advancements in photonics and quantum technologies.</p>
         </div>
-    </section>
+    </div>
 
     <section id="research" class="section">
         <div class="container">
@@ -125,13 +136,11 @@
                     <h3>Title of Research Paper 1</h3>
                     <p>Authors: Author 1, Author 2, Author 3</p>
                     <p>Journal: Journal Name, Year</p>
-                    <a href="link-to-paper-1.pdf" target="_blank">Read Full Paper</a>
                 </li>
                 <li>
                     <h3>Title of Research Paper 2</h3>
                     <p>Authors: Author 1, Author 2, Author 3</p>
                     <p>Journal: Journal Name, Year</p>
-                    <a href="link-to-paper-2.pdf" target="_blank">Read Full Paper</a>
                 </li>
                 <!-- Add more publications as needed -->
             </ul>
@@ -144,14 +153,14 @@
             <p>Meet the brilliant minds behind our groundbreaking research.</p>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="team1.jpg" alt="Team Member 1">
+                    <img src="pi.jpg" alt="Principal Investigator">
                     <h3>Dr. John Doe</h3>
                     <p>Principal Investigator</p>
                 </div>
                 <div class="team-member">
-                    <img src="team2.jpg" alt="Team Member 2">
-                    <h3>Dr. Jane Smith</h3>
-                    <p>Senior Researcher</p>
+                    <img src="grad-students.jpg" alt="Graduate Students">
+                    <h3>Graduate Students</h3>
+                    <p>Our dedicated graduate students contributing to research.</p>
                 </div>
                 <!-- Add more team members as needed -->
             </div>
@@ -161,22 +170,24 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>If you have any questions or would like to collaborate with us, please get in touch.</p>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" required></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
+            <div class="contact-card">
+                <p>If you have any questions or would like to collaborate with us, please get in touch.</p>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Photonics and Quantum Tech Research Group - PES University</p>
+            <p>&copy; 2024 Photonics & Quantum Tech | PES University</p>
         </div>
     </footer>
 </body>
