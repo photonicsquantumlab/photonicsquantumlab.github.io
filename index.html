@@ -3,106 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PQT Lab</title>
+    <title>Photonics and Quantum Tech Research Group - PES University</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>PQT Lab</h1>
-            <p>Pioneering Photonics and Quantum Research</p>
+            <h1>Photonics and Quantum Tech Research Group</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <nav>
+    <section id="home" class="section">
         <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#join-us">Join Us</a></li>
+            <h2>Welcome to our Research Group</h2>
+            <p>We are a leading research group at PES University focusing on advancements in photonics and quantum technologies.</p>
+        </div>
+    </section>
+
+    <section id="research" class="section">
+        <div class="container">
+            <h2>Our Research</h2>
+            <p>Our research explores cutting-edge developments in photonics and quantum technologies. We aim to push the boundaries of knowledge and innovation in these fields.</p>
+        </div>
+    </section>
+
+    <section id="publications" class="section">
+        <div class="container">
+            <h2>Publications</h2>
+            <ul class="publications-list">
+                <li>
+                    <h3>Title of Research Paper 1</h3>
+                    <p>Authors: Author 1, Author 2, Author 3</p>
+                    <p>Journal: Journal Name, Year</p>
+                    <a href="link-to-paper-1.pdf" target="_blank">Read Full Paper</a>
+                </li>
+                <li>
+                    <h3>Title of Research Paper 2</h3>
+                    <p>Authors: Author 1, Author 2, Author 3</p>
+                    <p>Journal: Journal Name, Year</p>
+                    <a href="link-to-paper-2.pdf" target="_blank">Read Full Paper</a>
+                </li>
+                <!-- Add more publications as needed -->
             </ul>
         </div>
-    </nav>
+    </section>
 
-    <main>
-        <section id="about">
-            <div class="container">
-                <h2>About</h2>
-                <p>Welcome to PQT Lab, where we focus on cutting-edge research in photonics and quantum technology.</p>
-            </div>
-        </section>
-
-        <section id="research">
-            <div class="container">
-                <h2>Research</h2>
-                <p>Our research encompasses various topics in photonics and quantum technology.</p>
-            </div>
-        </section>
-
-        <section id="team">
-            <div class="container">
-                <h2>Team</h2>
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Our Team</h2>
+            <p>Meet the brilliant minds behind our groundbreaking research.</p>
+            <div class="team-grid">
                 <div class="team-member">
-                    <h3>Principal Investigator (PI)</h3>
-                    <img src="placeholder.jpg" alt="PI Image">
-                    <p>Name: [PI Name]</p>
-                    <p>Research Interests: [Research Interests]</p>
+                    <img src="team1.jpg" alt="Team Member 1">
+                    <h3>Dr. John Doe</h3>
+                    <p>Principal Investigator</p>
                 </div>
                 <div class="team-member">
-                    <h3>Graduate Members</h3>
-                    <img src="placeholder.jpg" alt="Graduate Member Image">
-                    <p>Name: [Graduate Member Name]</p>
-                    <p>Research Interests: [Research Interests]</p>
+                    <img src="team2.jpg" alt="Team Member 2">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Senior Researcher</p>
                 </div>
-                <div class="team-member">
-                    <h3>Undergraduate Members</h3>
-                    <img src="group-placeholder.jpg" alt="UG Members Group Image">
-                    <p>Group Picture</p>
-                </div>
-                <div class="team-member">
-                    <h3>Alumni</h3>
-                    <p>Information about alumni coming soon.</p>
-                </div>
+                <!-- Add more team members as needed -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="publications">
-            <div class="container">
-                <h2>Publications</h2>
-                <p>Explore our latest publications in the field of photonics and quantum technology.</p>
-            </div>
-        </section>
-
-        <section id="teaching">
-            <div class="container">
-                <h2>Teaching</h2>
-                <p>Learn about our teaching initiatives and courses offered by PQT Lab.</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Get in touch with us for any inquiries or collaborations.</p>
-            </div>
-        </section>
-
-        <section id="join-us">
-            <div class="container">
-                <h2>Join Us</h2>
-                <p>Interested in joining PQT Lab? Find out more about our open positions and application process.</p>
-            </div>
-        </section>
-    </main>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to collaborate with us, please get in touch.</p>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 PQT Lab. All rights reserved.</p>
+            <p>&copy; 2024 Photonics and Quantum Tech Research Group - PES University</p>
         </div>
     </footer>
 </body>
