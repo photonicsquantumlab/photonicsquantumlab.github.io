@@ -1,100 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <title>Photonics & Quantum Tech Research Group</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Photonics and Quantum Tech Research Group">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Group Logo">
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <div class="hero">
-            <h1>Leading Photonics & Quantum Tech Research</h1>
-            <p>Innovating the future of technology with cutting-edge research.</p>
-        </div>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a pioneering research group focusing on photonics and quantum technologies, pushing the boundaries of science and technology.</p>
-    </section>
-    <section id="research">
-        <h2>Our Research</h2>
-        <p>Explore our groundbreaking projects and research papers that are shaping the future of quantum technologies and photonics.</p>
-    </section>
-    <section id="publications">
-        <h2>Publications</h2>
-        <p>Read our latest research publications and scientific contributions to the field of photonics and quantum technology.</p>
-    </section>
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <p>Learn about our teaching efforts, courses, and workshops aimed at educating the next generation of scientists and engineers.</p>
-    </section>
-    <section id="team">
-        <h2>Our Team</h2>
-        <div class="team-section">
-            <h3>Principal Investigator</h3>
-            <div class="member">
-                <img src="pi-photo.jpg" alt="PI Photo">
-                <p>Dr. John Doe</p>
-                <a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a>
-            </div>
-        </div>
-        <div class="team-section">
-            <h3>Graduate Students</h3>
-            <div class="member">
-                <img src="grad-student1.jpg" alt="Graduate Student 1 Photo">
-                <p>Jane Smith</p>
-                <a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a>
-            </div>
-            <div class="member">
-                <img src="grad-student2.jpg" alt="Graduate Student 2 Photo">
-                <p>Michael Johnson</p>
-                <a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a>
-            </div>
-        </div>
-        <div class="team-section">
-            <h3>Undergraduate Students</h3>
-            <p>Our dedicated undergraduate members contribute significantly to our research efforts.</p>
-            <ul>
-                <li>Emily Davis</li>
-                <li>Robert Wilson</li>
-                <li>Anna Brown</li>
-            </ul>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="submit.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2024 Photonics & Quantum Tech Research Group</p>
-    </footer>
+    <table summary="Table for page layout." id="tlayout">
+        <tr valign="top">
+            <td id="layout-menu">
+                <div class="menu-category">
+                    <a href="#home" style="text-decoration:none">
+                        <svg height="17px" width="17px">
+                            <g>
+                                <rect x="0" y="0" width="9" height="9" fill="#ff5500"></rect>
+                                <rect x="9" y="0" width="9" height="9" fill="#505050"></rect>
+                                <rect x="0" y="9" width="9" height="9" fill="#007080"></rect>
+                                <rect x="9" y="9" width="9" height="9" fill="#00b060"></rect>
+                            </g>
+                        </svg>
+                        <b><font color="#ff5500">P</font><font color="#505050">Q</font><font color="#007080">T</font><font color="#00b060">R</font></b>
+                    </a>
+                    @ Research Lab
+                </div>
+                <div class="menu-item"><a href="#home" class="current">Home</a></div>
+                <div class="menu-item"><a href="#about">About Us</a></div>
+                <div class="menu-item"><a href="#research">Research</a></div>
+                <div class="menu-item"><a href="#publications">Publications</a></div>
+                <div class="menu-item"><a href="#teaching">Teaching</a></div>
+                <div class="menu-item"><a href="#team">Team</a></div>
+                <div class="menu-item"><a href="#contact">Contact</a></div>
+            </td>
+            <td id="layout-content">
+                <div id="toptitle">
+                    <h1>
+                        <center>
+                            <svg height="110px" width="500px">
+                                <defs>
+                                    <filter id="f1" x="0" y="0" width="150%" height="150%">
+                                        <feOffset result="offOut" in="SourceAlpha" dx="1.5" dy="1.5" />
+                                        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+                                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                                    </filter>
+                                </defs>
+                                <g>
+                                    <rect x="0" y="0" height="50" width="50" fill="#ff5500"></rect>
+                                    <rect x="50" y="0" height="50" width="50" fill="#505050"></rect>
+                                    <rect x="0" y="50" height="50" width="50" fill="#007080"></rect>
+                                    <rect x="50" y="50" height="50" width="50" fill="#00b060"></rect>
+                                    <text x="2.75%" y="35%" stroke="white" fill="white" style="font-family: Helvetica;Arial;Times; font-weight:bold; font-size:27pt">P</text>
+                                    <text x="13%" y="35%" stroke="white" fill="white" style="font-family: Helvetica;Arial;Times; font-weight:bold; font-size:27pt">Q</text>
+                                    <text x="2.75%" y="80%" stroke="white" fill="white" style="font-family: Helvetica;Arial;Times; font-weight:bold; font-size:27pt">T</text>
+                                    <text x="13%" y="80%" stroke="white" fill="white" style="font-family: Helvetica;Arial;Times; font-weight:bold; font-size:27pt">R</text>
+                                </g>
+                                <g>
+                                    <text x="25%" y="25%" stroke="#000000" fill="black" style="font-family:Helvetica;Arial;Times; font-weight:bold; font-size:18pt">Photonics &</text>
+                                    <text x="25%" y="60%" stroke="#000000" fill="#000000" style="font-family:Helvetica;Arial;Times; font-weight:bold; font-size:18pt">Quantum Tech</text>
+                                    <text x="25%" y="85%" stroke="#000000" fill="#000000" style="font-family:Helvetica;Arial;Times; font-size:10pt">Research Group</text>
+                                </g>
+                                <g>
+                                    <image href="https://www.microsoft.com/favicon.ico" height="100px" x="77%" y="0%"></image>
+                                </g>
+                            </svg>
+                        </center>
+                    </h1>
+                </div>
+
+                <center>
+                    <p>
+                    <table width="100%">
+                        <tr valign="top">
+                            <td colspan="1" class="bibtexspacer" bgcolor="#505050" cellpadding="10">
+                                <font size="+2"><b>Mission</b></font>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+
+                <p align="justify">
+                    At <svg height="17px" width="17px">
+                        <g>
+                            <rect x="0" y="0" width="9" height="9" fill="#ff5500"></rect>
+                            <rect x="9" y="0" width="9" height="9" fill="#505050"></rect>
+                            <rect x="0" y="9" width="9" height="9" fill="#007080"></rect>
+                            <rect x="9" y="9" width="9" height="9" fill="#00b060"></rect>
+                        </g>
+                    </svg>
+                    <b><font color="#ff5500">P</font><font color="#505050">Q</font><font color="#007080">T</font><font color="#00b060">R</font></b>,
+                    we work on a broad spectrum of areas spanning photonics and quantum technologies. Our research projects consider various aspects of these fields, including theoretical foundations, experimental setups, and practical applications. We aim to push the boundaries of science and technology through innovative and interdisciplinary research.
+                </p>
+
+                <p align="justify">
+                    Please <a href="#publications">look at our publications</a> for a feel of our current research directions. All credit for the work goes to a hard-working and dedicated <a href="#team">group of students</a> (and of course, our <a href="#alumni">alumni</a>).
+                </p>
+
+                <p align="justify">
+                    Our lab is generously supported by various research grants and collaborations with academic institutions and industry partners. We are committed to fostering a collaborative environment that promotes innovation and excellence in research.
+                </p>
+
+                <hr width="100%">
+                <center>
+                    <img src="https://via.placeholder.com/600x200.png?text=Research+Image" height="200px" alt="Research Image" />
+                </center>
+                <hr width="100%">
+                
+                <section id="about">
+                    <h2>About Us</h2>
+                    <p>We are a pioneering research group focusing on photonics and quantum technologies, pushing the boundaries of science and technology.</p>
+                </section>
+                <section id="research">
+                    <h2>Our Research</h2>
+                    <p>Explore our groundbreaking projects and research papers that are shaping the future of quantum technologies and photonics.</p>
+                </section>
+                <section id="publications">
+                    <h2>Publications</h2>
+                    <p>Read our latest research publications and scientific contributions to the field of photonics and quantum technology.</p>
+                </section>
+                <section id="teaching">
+                    <h2>Teaching</h2>
+                    <p>Learn about our teaching efforts, courses, and workshops aimed at educating the next generation of scientists and engineers.</p>
+                </section>
+                <section id="team">
+                    <h2>Our Team</h2>
+                    <div class="team-section">
+                        <h3>Principal Investigator</h3>
+                        <div class="member">
+                            <img src="pi-photo.jpg" alt="PI Photo">
+                            <p>Dr. John Doe</p>
+                            <a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a>
+                        </div>
+                    </div>
+                    <div class="team-section">
+                        <h3>Graduate Students</h3>
+                        <div class="member">
+                            <img src="grad-student1.jpg" alt="Graduate Student 1 Photo">
+                            <p>Jane Smith</p>
+                            <a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a>
+                        </div>
+                        <div class="member">
+                            <img src="grad-student2.jpg" alt="Graduate Student 2 Photo">
+                            <p>Michael Johnson</p>
+                            <a href="https://scholar.google.com" target="_blank">Google Scholar Profile</a>
+                        </div>
+                    </div>
+                    <div class="team-section">
+                        <h3>Undergraduate Students</h3>
+                        <p>Our dedicated undergraduate members contribute significantly to our research efforts.</p>
+                        <ul>
+                            <li>Emily Davis</li>
+                            <li>Robert Wilson</li>
+                            <li>Anna Brown</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="contact">
+                    <h2>Contact Us</h2>
+                    <form action="submit.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                </section>
+                <footer>
+                    <p>&copy; 2024 Photonics & Quantum Tech Research Group</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
